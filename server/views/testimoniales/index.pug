@@ -1,0 +1,29 @@
+extends ../layout/index
+block contenido
+  main.container.mt-5
+    h1.text-center.mb-b #{pagina}
+
+    .row
+      .col-md-12
+        include ../layout/partials/testimoniales
+        
+      .col-md-12
+        h2.text-center Agrega un Testimonial
+
+        if(errores)
+          each error in errores
+            .alert.alert-danger.text-center=error.mensaje
+
+        .row.justify-content-center
+          .col-md-8
+            form(action="/testimoniales", method="POST")
+              .form-group
+                label(for="nombre") Nombre
+                input(type="text", id="nombre", placeholder="Tu Nombre", name="nombre", class="form-control", value=nombre, required)
+              .form-group.mt-2
+                label(for="correo") correo Electrónico
+                input(type="email", id="correo", placeholder="Tu correo Electrónico", name="correo", class="form-control", value=correo, required)
+              .form-group.mt-2
+                label(for="mensaje") Mensaje
+                textarea#mensaje(class="form-control", name="mensaje", rows="3", placeholder="Tu mensaje...", required)=mensaje
+              input(type="submit", value="Agregar", class="btn btn-success btn-block mt-2")

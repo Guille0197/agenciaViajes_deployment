@@ -1,0 +1,12 @@
+header
+  .navegacion
+    .container
+      .row.justify-content-center.justify-content-md-between.align-items-center.py-4
+        .col-6.col-md-4
+          a(href="/")
+            img(src="/img/logo.svg", alt="Logo Agencia de viajes", class="img-fluid")
+        .col-6.col-md-8
+          nav.nav.justify-content-center.justify-content-md-end 
+            a.nav-link(href="/nosotros", class=(ruta === '/nosotros' ? 'active' : '')) Nosotros
+            a.nav-link(href="/viajes", class=(ruta === '/viajes' ? 'active' : '')) Viajes
+            a.nav-link(href="/testimoniales", class=(ruta === '/testimoniales' ? 'active' : '')) Testimoniales

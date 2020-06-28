@@ -1,0 +1,18 @@
+extends ../layout/index
+block contenido
+  main.container.mt-5
+    .row
+      .col-md-5
+        img(src=`/img/destinos_${viaje.imagen}_ln.jpg`, class="img-fluid")
+      .col-md-7 
+        h1 #{viaje.titulo}
+        p 
+          i.fas.fa-calendar-alt
+          |    fecha Ida: #{viaje.fecha_ida} - Fecha Vuelta: #{viaje.fecha_vuelta}
+        p 
+          i.fas.fa-dollar-sign
+          |   #{viaje.precio}$
+        p 
+          i.fas.fa-users
+          |   #{viaje.disponibles} Disponibles
+        p= viaje.descripcion
