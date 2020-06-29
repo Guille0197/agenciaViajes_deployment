@@ -1,4 +1,4 @@
-.row.proximos-viajes  
+.row.proximos-viajes.tagline  
       each viaje in viajes
         .col-md-6.col-lg-4.mb-4
           .card 
@@ -13,3 +13,5 @@
                 |   #{viaje.precio}
               p= viaje.descripcion.substr(0,100)
               a(href=`viajes/${viaje.id}`, class="btn btn-success btn-block") Más Información 
+script.
+  ScrollReveal().reveal('.tagline', { delay: 500 });

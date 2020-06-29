@@ -1,6 +1,6 @@
 extends ../layout/index
 block contenido
-  main.container.mt-5
+  main.container.mt-5.tagline
     .row
       .col-md-5
         img(src=`/img/destinos_${viaje.imagen}_ln.jpg`, class="img-fluid")
@@ -16,3 +16,5 @@ block contenido
           i.fas.fa-users
           |   #{viaje.disponibles} Disponibles
         p= viaje.descripcion
+  script.
+    ScrollReveal().reveal('.tagline', { delay: 500 })

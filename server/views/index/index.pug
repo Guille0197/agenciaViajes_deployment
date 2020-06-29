@@ -1,11 +1,11 @@
 extends ../layout/index
 block slider
-  .slider
-    h1 Rio de Janeiro
-    em aventura
+  .slider.headline
+    h1.punchline Rio de Janeiro
+    em.tagline aventura
 
 block contenido
-  main.container.mt-5
+  main.container.mt-5.tagline
     h2.text-center.mb-5 Sobre Nosotros
     .row.mb-5
       .col-md-6
@@ -17,7 +17,7 @@ block contenido
     h2.text-center.mb-5 Próximos Viajes
     include ../layout/partials/viajes
 
-  .descuento  
+  .descuento.tagline  
     .container
       .row
         .col-md-6
@@ -27,6 +27,10 @@ block contenido
             p.fecha 20 de Agosto de 2020 - 1 Septiembre de 2020
             p.precio $2000.00
 
-  .container  
+  .container.tagline  
     h2.text-center.my-5 Testimoniales
     include ../layout/partials/testimoniales
+  script.
+    ScrollReveal().reveal('.headline')
+    ScrollReveal().reveal('.tagline', { delay: 500 })
+    ScrollReveal().reveal('.punchline', { delay: 700 })

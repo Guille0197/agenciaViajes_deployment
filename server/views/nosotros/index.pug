@@ -1,6 +1,6 @@
 extends ../layout/index
 block contenido
-  main.container.mt-5
+  main.container.mt-5.tagline
     .row
       .col-md-5
         img.img-fluid(src="img/nosotros.jpg", alt="Imagen de nosotros")
@@ -10,7 +10,7 @@ block contenido
         blockquote Aenean cursus nibh sit amet tempor mollis. Fusce interdum vitae dolor vel sodales. Phasellus purus magna, fermentum a lorem non, convallis convallis risus. Phasellus bibendum eros vitae ex commodo, quis ullamcorper lectus vulputate. Vivamus quis.
         p Curabitur eleifend et dolor nec pretium. Donec non est in orci fermentum molestie in vitae est. Donec sollicitudin libero sapien, sit amet dignissim dui fringilla at. Nullam posuere diam eu massa suscipit molestie. Sed a ligula eget nulla congue vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse quam est, condimentum non libero a, fringilla cursus dolor. Morbi eget arcu feugiat, ultricies magna sit amet, faucibus risus.
         p Duis sagittis et enim nec viverra. Praesent malesuada mi purus, vitae gravida nisi bibendum sed. Donec eros metus, sollicitudin ac tellus vitae, vestibulum congue lacus. Proin at magna eget quam sollicitudin tempus. Proin ac nisl id nunc scelerisque interdum id nec velit. Aenean feugiat lacinia aliquam. Curabitur est urna, maximus ut turpis sit amet, pulvinar porta lacus. Pellentesque ut risus in velit cursus tempor sit amet nec dolor. In vitae rutrum augue. Suspendisse ipsum tortor, pharetra nec faucibus consectetur, cursus quis massa.
-  .listado-iconos
+  .listado-iconos.tagline2
     .container.mt-5.py-5.text-center
       .row  
         .col-md-4
@@ -25,3 +25,6 @@ block contenido
           img(src="img/icono_precios.svg", class="img-fluid mb-4")
           h2.mb-4 Mejor Precio 
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non ligula ut lacus hendrerit commodo. Pellentesque consectetur
+      script.
+        ScrollReveal().reveal('.tagline', { delay: 500 });
+        ScrollReveal().reveal('.tagline2', { delay: 700 });

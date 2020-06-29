@@ -1,5 +1,5 @@
 blockquote.text-center Lee Sobre Nuestros Clientes y sus Experiencias
-.row.testimoniales
+.row.testimoniales.tagline
   each testimonial in testimoniales
     .col-md-6.col-lg-4.mb-4 
       .card
@@ -9,3 +9,5 @@ blockquote.text-center Lee Sobre Nuestros Clientes y sus Experiencias
               | #{testimonial.mensaje}
             footer.blockquote-footer
               | #{testimonial.nombre}
+script.
+  ScrollReveal().reveal('.tagline', { delay: 500 });
