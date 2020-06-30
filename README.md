@@ -6,7 +6,7 @@ Link: 👉🏽 https://dry-sea-39349.herokuapp.com/
 
 
 # 💻
-![Guillermo Navarro](https://repository-images.githubusercontent.com/272864429/f8a00c00-b01d-11ea-9270-6ce69153aaf6)
+![Guillermo Navarro](https://github.com/Guille0197/agenciaViajes_deployment/blob/master/public/img/Agencia%20de%20Viajes.png)
 
 This project was bootstrapped with [Node.js](https://nodejs.org/en/about/).
 
