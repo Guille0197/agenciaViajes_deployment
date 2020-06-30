@@ -12,8 +12,8 @@ require('dotenv').config({ path: 'variables.env' });
 
 // validamos la conexion a la db ******
 db.authenticate()
-  .then(() => console.log('DB conectada...'))
-  .catch(error => console.log('Sorry bro error: ', error));
+  .then(() => console.log('DB Conected...'))
+  .catch(error => console.log('ERROR DB: ', error));
 
 // configurar express
 const app = express();
@@ -55,6 +55,6 @@ const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 3000;
 
 app.listen(port, host, () => {
-  console.log('El servidor esta funcionado...')
+  console.log('Server work!...')
 });
 

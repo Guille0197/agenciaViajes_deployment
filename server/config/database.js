@@ -16,5 +16,3 @@ module.exports = new Sequelize(process.env.BD_NAME, process.env.BD_USER, process
   },
   operatorsAliases: 1
 });
-
-console.log('servidor de la muerte: ', process.env.BD_HOST, ' el puerto de la misma: ', process.env.BD_PORT, 'pass: ', process.env.BD_PASS);
