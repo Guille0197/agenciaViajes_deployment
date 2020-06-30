@@ -13,7 +13,7 @@ require('dotenv').config({ path: 'variables.env' });
 // validamos la conexion a la db ******
 db.authenticate()
   .then(() => console.log('DB conectada...'))
-  .catch(error => console.log(error));
+  .catch(error => console.log('Sorry bro error: ', error));
 
 // configurar express
 const app = express();
